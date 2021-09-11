@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cal_imc"
+    tools:context=".MainActivity2">
+
+
+    <EditText
+        android:id="@+id/editTextTitulo"
+        android:layout_width="411dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="80dp"
+
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/activity2"
+        android:textAlignment="center"
+        android:textColor="@color/cal_imc"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="40dp"
+        android:text="Peso (kg)"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTitulo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="70dp"
+        android:text="Altura (cm)"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextPeso"
+        android:layout_width="224dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="40dp"
+        android:hint="Ingrese peso"
+        android:textAlignment="textEnd"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTitulo" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextAltura"
+        android:layout_width="200dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="68dp"
+        android:hint="Ingrese altura"
+        android:textAlignment="textEnd"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPeso" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="80dp"
+        android:text="CALCULAR"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

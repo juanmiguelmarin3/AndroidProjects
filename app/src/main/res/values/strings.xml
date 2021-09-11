@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EjExtraclase1</string>
+    <string name="saludo">Calculadora convencional</string>
+    <string name="activity2">Calculadora IMC (Indice de Masa Corporal)</string>
+</resources>
